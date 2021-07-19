@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bebercio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Megrim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="telon"></div>
+    <div class="telon2"></div>
+    <div class="navAbajo">
+        <div class="posSwitch spinner">
+            <button class="navAbajo__switch" id="switch">
+                <span><i class="fas fa-circle-notch"></i></span>
+            </button>
+        </div>
+    </div>
+    <div class="sombraCarrito"></div>
+    <div class="tituloContainer">
+        <div class="titulo">la medichín</div>
+    </div>
+    <section class="mitiA">
+        <div class="foton">
+            <div class= "imagen grupoMedio" id="caribe">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=183g8HcVUPmQPQQph9516ZT5IGHq_601n">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div> 
+            <div class= "imagen grupoAbajo" id="penicilina">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=1tRVXwZVj-DikbJaQ7xcN5H1fdpNQShJv">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div>
+            <div class= "imagen grupoAbajo" id="experimento">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=1FHvmdb52liGPUSs4Ncih_54P6bSyDGKr">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div> 
+            <div class= "imagen grupoAbajo" id="expedicion">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=1goqDFXFTYsdpjRGCXlOGjUAo9q4_HslS">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div>
+            <div class= "imagen grupoAbajo" id="negroni">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=1Ei1UHTL7lKedQQp08BoBFbwbdPPOtqn2">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div>
+            <div class= "imagen grupoAbajo" id="tonico">
+                <img class="imagen__tragoA" src="https://drive.google.com/uc?/export=view&id=1g2kdXYrWnDQfig6QffrbD7BVRmKOJFl4">
+                <img class="imagenSombra" src="https://drive.google.com/uc?/export=view&id=1PUyS-ges0KVgZawcShE_POJhhYHAC-oJ" alt="sombra">
+            </div> 
+
+        </div>
+        <div class="mitiA__abajo">
+            <div class="mitiA__abajo--colorA" id="verProd"></div>
+            <div class="mitiA__abajo--colorB" id="descripcion"></div>
+        </div>
+    </section>
+
+    <section class="mitiB" id="test">
+        <div class="carrito12">
+            <div><i id="equis" class="fas fa-times-circle"></i></div>
+            <div class="carritoTitulo">Tu carrito</div>
+            <div class="carritoProductos">
+                <div class="carritoMensaje">No hay nada aquí</div> 
+            </div>
+            <div class="carritoPie">
+                <div class="carritoPrecio">
+                    <div class="carritoPrecio_nombre">Total</div>
+                    <div class="carritoPrecio_num">30</div>
+                </div>
+                <div>
+                    <button class="carritoBoton">Checkout</button>
+                </div>
+            </div>
+        </div> <!--Carrito que se carga en el JavaScript-->
+        <div class="iconoCarrito">
+            <i id="silverChariot" class="fas fa-shopping-bag chariot"></i>
+            <div class="chariotContador">0</div>
+        </div>
+
+        <div class="gridNombres">
+            <div class="detalles_parteA">
+                <div class="g1">
+                    <div class="g1Medio" id="caribeG1">Cóctel</div>
+                    <div class="g1Abajo" id="penicilinaG1">Cóctel</div>
+                    <div class="g1Abajo" id="experimentoG1">Cóctel</div>
+                    <div class="g1Abajo" id="expedicionG1">Cóctel</div>
+                    <div class="g1Abajo" id="negroniG1">Cóctel</div>
+                    <div class="g1Abajo" id="tonicoG1">Cóctel</div>
+                </div>
+            </div>
+            <div class="detalles_parteB">
+                <div class="g2">
+                    <div class="gridTitulo g2Medio" id="caribeG2">Caribe Solar</div>
+                    <div class="gridTitulo g2Abajo" id="penicilinaG2">Penicilina Ahumada</div>
+                    <div class="gridTitulo g2Abajo" id="experimentoG2">Experimento Nro 9</div>
+                    <div class="gridTitulo g2Abajo" id="expedicionG2">Expedición Saturno</div>
+                    <div class="gridTitulo g2Abajo" id="negroniG2">Negroni de la Huerta</div>
+                    <div class="gridTitulo g2Abajo" id="tonicoG2">Tónico de la Casa</div>
+                </div>
+            </div>
+            <div class="detalles_parteC">
+                <div class="detalles_parteC-izq">
+                    <div class="g3">
+                        <div class="g3Dentro g3Medio" id="caribeG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Vodka macerado con té de rosa mosqueta<br>+Hibiscus<br>+Manzana<br>+Naranja <br>+Frutos rojos <br>+Sour mix de maracuyá</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="penicilinaG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Whisky macerado en manteca<br>+Miel salada con jengibre<br>+Limón</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="experimentoG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Vodka<br>+Triple Sec<br>+Almíbar de frutos rojos <br>+Jugo de limón <br>+Shrub de frambuesa</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="saturnoG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Gin<br>+Maracuyá<br>+Falernum<br>+Limón</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="expedicionG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Gin<br>+Maracuyá<br>+Falernum<br>+Limón</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="negroniG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Gin<br>+Campari<br>+Vermut Rosso en cocción con tomates y frambuesas</div>
+                        </div>
+                        <div class="g3Dentro g3Abajo" id="tonicoG3">
+                            <div class="g3Titulo">Fórmula</div>
+                            <div class="g3Texto">+Gin<br>+Campari<br>+Vermut Rosso macerado en té chai,<br> canela en rama, naranja,<br> perfume de canela</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalles_parteC-der">
+                    <div class="detalles_parteC-derUp">
+                        <div class=" g4">
+                            <div class="g4Dentro g3Medio" id="caribeG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para un cóctel<br>+Té de berries <br>+Deshidratado para decorar <br>+Revolvedor <br>+Instrucciones</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="penicilinaG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para un cóctel<br>+Chips para ahumar su cristalería<br>+Deshidratado para decorar<br>+Revolvedor<br>+Instrucciones</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="experimentoG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+3 botellas para el experimento<br>+Deshidratado para decorar<br>+Revolvedor<br>+Instrucciones</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="saturnoG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para un cóctel<br>+Deshidratado para decorar<br>+Revolvedor</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="expedicionG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para un cóctel<br>+Deshidratado para decorar<br>+Revolvedor</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="negroniG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para un cóctel<br>+Deshidratado para decorar<br>+Revolvedor</div>
+                            </div>
+                            <div class="g4Dentro g3Abajo" id="tonicoG4">
+                                <div class="g4Titulo">Presentación</div>
+                                <div class="g4Texto">+Dosis para dos cócteles<br>+Deshidratados para decorar<br>+Revolvedor</div>
+                            </div>
+                        </div>
+                        <div class="g5">
+                            <div class="g5Dentro g3Medio" id="caribeG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Dulce<br>cítrico</div>
+                            </div>
+                            <div class="g5Dentro g3Abajo" id="penicilinaG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Cítrico</div>
+                            </div>
+                            <div class="g5Dentro g3Abajo" id="experimentoG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Dulce <br>frutado</div>
+                            </div>
+                            <div class="g5Dentro g3Abajo" id="expedicionG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Cítrico<br>frutado</div>
+                            </div>
+                            <div class="g5Dentro g3Abajo" id="negroniG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Seco con notas<br>leves dulces</div>
+                            </div>
+                            <div class="g5Dentro g3Abajo" id="tonicoG5">
+                                <div class="g5Titulo">Perfil de sabor</div>
+                                <div class="g5Texto">Seco especiado</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalles_parteC-derDown">
+                        <div class="g6">
+                            <div class="g3Medio" id="caribeG6">100ml</div>
+                            <div class="g3Abajo" id="penicilinaG6">100ml</div>
+                            <div class="g3Abajo" id="experimentoG6">100ml</div>
+                            <div class="g3Abajo" id="expedicionG6">100ml</div>
+                            <div class="g3Abajo" id="negroniG6">100ml</div>
+                            <div class="g3Abajo" id="tonicoG6">200ml</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div></div>
+        <div></div>
+        <div class="prueba">
+            <div class="mitiB__precio g8">
+                <span class="addCart_precio" id="items--precio">$700.-</span>
+                <span id="items--addCart">
+                    <button id="vamos" class="addCart_boton" onclick="agregarCarritoCaribeS()">Agregar</button>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
