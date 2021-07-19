@@ -169,8 +169,6 @@ function ordenar(){                 //Ordena el carrito segun el costo de las be
     for (const Trago of carrito){
         carrito2.push(Trago.nombre);
     }
-    //parrafo2.innerHTML = carrito2.join(",");
-    //listado.appendChild(parrafo2);
 }
 function limpiar(){
     for(i=0 ; i<150 ; i++){
@@ -240,32 +238,32 @@ function logkey(e){
         switch(contador){
             case 0:
                 $("#caribe").css("bottom","-110%");
-                $("#tonico").animate({bottom:'110%'},"slow");
+                $("#tonico").animate({bottom:'220%'},"slow");
                 $("#caribe").animate({bottom:'10%'},"slow");
 
                 $("#caribeG1").css("bottom","-110%");
-                $("#tonicoG1").animate({bottom:'110%'},"slow");
+                $("#tonicoG1").animate({bottom:'220%'},"slow");
                 $("#caribeG1").animate({bottom:'10%'},"slow");
 
                 $("#caribeG2").css("bottom","-110%");
-                $("#tonicoG2").animate({bottom:'100%'},"slow");
+                $("#tonicoG2").animate({bottom:'110%'},"slow");
                 $("#caribeG2").animate({bottom:'0%'},"slow");
                 
                 $("#caribeG3").css("bottom","-110%");
-                $("#tonicoG3").animate({bottom:'100%'},"slow");
-                $("#caribeG3").animate({bottom:'87%'},"slow");
+                $("#tonicoG3").animate({bottom:'550%'},"slow");
+                $("#caribeG3").animate({bottom:'0%'},"slow");
 
                 $("#caribeG4").css("bottom","-110%");
-                $("#tonicoG4").animate({bottom:'100%'},"slow");
-                $("#caribeG4").animate({bottom:'100%'},"slow");
+                $("#tonicoG4").animate({bottom:'660%'},"slow");
+                $("#caribeG4").animate({bottom:'0%'},"slow");
 
                 $("#caribeG5").css("bottom","-110%");
-                $("#tonicoG5").animate({bottom:'100%'},"slow");
-                $("#caribeG5").animate({bottom:'75%'},"slow");
+                $("#tonicoG5").animate({bottom:'550%'},"slow");
+                $("#caribeG5").animate({bottom:'0%'},"slow");
 
                 $("#caribeG6").css("bottom","-110%");
-                $("#tonicoG6").animate({bottom:'100%'},"slow");
-                $("#caribeG6").animate({bottom:'50%'},"slow");
+                $("#tonicoG6").animate({bottom:'430%'},"slow");
+                $("#caribeG6").animate({bottom:'0%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoCaribeS()");
                 contador=1;
@@ -434,16 +432,36 @@ function logkey(e){
         }
     }else if(e.keyCode == 38){
         switch(contador){
-            case 0:
+            case 1:
                 $("#tonico").css("bottom","110%");
                 $("#caribe").animate({bottom:'-110%'},"slow");
                 $("#tonico").animate({bottom:'10%'},"slow");
-                contador=8;
-            break;
-            case 1:
-                $("#mini").css("bottom","110%");
-                $("#caribe").animate({bottom:'-110%'},"slow");
-                $("#mini").animate({bottom:'10%'},"slow");
+
+                $("#tonicoG1").css("bottom","110%");
+                $("#caribeG1").animate({bottom:'-90%'},"slow");
+                $("#tonicoG1").animate({bottom:'10%'},"slow");
+
+                $("#tonicoG2").css("bottom","110%");
+                $("#caribeG2").animate({bottom:'-100%'},"slow");
+                $("#tonicoG2").animate({bottom:'0%'},"slow");
+                
+                $("#tonicoG3").css("bottom","480%");
+                $("#caribeG3").animate({bottom:'-150%'},"slow");
+                $("#tonicoG3").animate({bottom:'370%'},"slow");
+                
+                $("#tonicoG4").css("bottom","580%");
+                $("#caribeG4").animate({bottom:'-130%'},"slow");
+                $("#tonicoG4").animate({bottom:'470%'},"slow");
+
+                $("#tonicoG5").css("bottom","460%");
+                $("#caribeG5").animate({bottom:'-105%'},"slow");
+                $("#tonicoG5").animate({bottom:'350%'},"slow");
+
+                $("#tonicoG6").css("bottom","348%");
+                $("#caribeG6").animate({bottom:'-110%'},"slow");
+                $("#tonicoG6").animate({bottom:'238%'},"slow");
+
+                $(".addCart_boton").attr("onclick","agregarCarritoTonic()");
                 contador=0;
             break;
             case 2:
@@ -515,8 +533,8 @@ function logkey(e){
                 $("#expedicion").animate({bottom:'-110%'},"slow");
                 $("#experimento").animate({bottom:'10%'},"slow");
 
-                $("#experimentoG1").css("bottom","-110%");
-                $("#expedicionG1").animate({bottom:'-90%'},"slow");
+                $("#experimentoG1").css("bottom","110%");
+                $("#expedicionG1").animate({bottom:'-100%'},"slow");
                 $("#experimentoG1").animate({bottom:'10%'},"slow");
 
                 $("#experimentoG2").css("bottom","100%");
@@ -547,51 +565,64 @@ function logkey(e){
                 $("#negroni").animate({bottom:'-110%'},"slow");
                 $("#expedicion").animate({bottom:'10%'},"slow");
 
-                $("#expedicionG1").css("bottom","-110%");
-                $("#negroniG1").animate({bottom:'-90%'},"slow");
+                $("#expedicionG1").css("bottom","110%");
+                $("#negroniG1").animate({bottom:'-110%'},"slow");
                 $("#expedicionG1").animate({bottom:'10%'},"slow");
 
                 $("#expedicionG2").css("bottom","200%");
                 $("#negroniG2").animate({bottom:'-100%'},"slow");
                 $("#expedicionG2").animate({bottom:'0%'},"slow");
                 
-                $("#expedicionG3").css("bottom","330%");
+                $("#expedicionG3").css("bottom","370%");
                 $("#negroniG3").animate({bottom:'150%'},"slow");
-                $("#expedicionG3").animate({bottom:'130%'},"slow");
+                $("#expedicionG3").animate({bottom:'260%'},"slow");
                 
                 $("#expedicionG4").css("bottom","485%");
-                $("#negroniG4").animate({bottom:'230%'},"slow");
-                $("#expedicionG4").animate({bottom:'185%'},"slow");
+                $("#negroniG4").animate({bottom:'300%'},"slow");
+                $("#expedicionG4").animate({bottom:'340%'},"slow");
 
-                $("#expedicionG5").css("bottom","310%");
-                $("#negroniG5").animate({bottom:'15%'},"slow");
-                $("#expedicionG5").animate({bottom:'115%'},"slow");
+                $("#expedicionG5").css("bottom","410%");
+                $("#negroniG5").animate({bottom:'100%'},"slow");
+                $("#expedicionG5").animate({bottom:'200%'},"slow");
 
                 $("#expedicionG6").css("bottom","310%");
-                $("#negroniG6").animate({bottom:'0%'},"slow");
+                $("#negroniG6").animate({bottom:'100%'},"slow");
                 $("#expedicionG6").animate({bottom:'110%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoSaturno()");                
                 contador=4;
             break;
-            case 6:
+            case 0:
                 $("#negroni").css("bottom","110%");
                 $("#tonico").animate({bottom:'-110%'},"slow");
                 $("#negroni").animate({bottom:'10%'},"slow");
-                contador=0;
-            break;
-            case 7:
-                $("#tonico").css("bottom","110%");
-                $("#gin").animate({bottom:'-110%'},"slow");
-                $("#tonico").animate({bottom:'10%'},"slow");
-                contador=6;
-            break;
-            case 8:
-                $("#gin").css("bottom","110%");
-                $("#petaca").animate({bottom:'-110%'},"slow");
-                $("#gin").animate({bottom:'10%'},"slow");
-                contador=7;
-            break;
+
+                $("#negroniG1").css("bottom","110%");
+                $("#tonicoG1").animate({bottom:'-110%'},"slow");
+                $("#negroniG1").animate({bottom:'10%'},"slow");
+
+                $("#negroniG2").css("bottom","200%");
+                $("#tonicoG2").animate({bottom:'-100%'},"slow");
+                $("#negroniG2").animate({bottom:'0%'},"slow");
+                
+                $("#negroniG3").css("bottom","430%");
+                $("#tonicoG3").animate({bottom:'220%'},"slow");
+                $("#negroniG3").animate({bottom:'320%'},"slow");
+                
+                $("#negroniG4").css("bottom","520%");
+                $("#tonicoG4").animate({bottom:'300%'},"slow");
+                $("#negroniG4").animate({bottom:'410%'},"slow");
+
+                $("#negroniG5").css("bottom","400%");
+                $("#tonicoG5").animate({bottom:'250%'},"slow");
+                $("#negroniG5").animate({bottom:'290%'},"slow");
+
+                $("#negroniG6").css("bottom","310%");
+                $("#tonicoG6").animate({bottom:'0%'},"slow");
+                $("#negroniG6").animate({bottom:'180%'},"slow");
+
+                $(".addCart_boton").attr("onclick","agregarCarritoNegroni()");
+                contador=5;
         }
     }
 }

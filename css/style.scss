@@ -117,7 +117,7 @@ $pB8:#545D7C;
     left: 2vw;
 
     width: 21vw;
-    height: 80vh;
+    height: 70vh;
 
     overflow: scroll;
 }
@@ -128,7 +128,6 @@ $pB8:#545D7C;
 }
 .carritoPie{
     position: absolute;
-    background-color: $pA3;
     height: 9vw;
     width: 100%;
     bottom: 0vw;
@@ -192,11 +191,19 @@ $pB8:#545D7C;
 .carritoPrecio_nombre{
     position: absolute;
     left: 3vw;
-    bottom: 5vw;
+
+    font-size: 2vw;
+    color: #2d325b;
+    font-family: 'Megrim', cursive;
+
 }
 .carritoPrecio_num{
     position: absolute;
     right: 3vw;
+
+    font-size: 2vw;
+    color: #2d325b;
+    font-family: 'Megrim', cursive;
 }
 .tituloContainer{
     position: absolute;
@@ -498,9 +505,6 @@ $pB8:#545D7C;
         }
     }
 }
-
-
-
 .mitiB__precio{
     font-size: 50px;
     width: 400px;
