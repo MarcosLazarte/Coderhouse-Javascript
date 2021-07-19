@@ -13,12 +13,12 @@ var pivotExpedicion = 0;
 var pivotNegroni = 0;
 var pivotTotal = 0;
 var pivotTonico = 0;
-
+var precioTotal = 0;
 //Agrega al carrito un las bebidas
 function agregarCarritoCaribeS(){
     pivotCaribe++;
     pivotTotal++;
-
+    precioTotal=precioTotal+ caribeSolar.precio;
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
     carrito.push(caribeSolar);
@@ -38,14 +38,20 @@ function agregarCarritoCaribeS(){
                                                 <input class="holon" value="${pivotCaribe}"></input>
                                             </div>
                                         </div>`);
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotCaribe!=1){
         $(".c1").empty();
         $(".c1").append(`<input class="holon" value="${pivotCaribe}"></input>`);
+
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
 }
 function agregarCarritoPeniciA(){
     pivotPenicilina++;
     pivotTotal++;
+    precioTotal=precioTotal+ penicilinaAhumada.precio;
 
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
@@ -58,9 +64,14 @@ function agregarCarritoPeniciA(){
                                                 <input class="holon" value="${pivotPenicilina}"></input>
                                             </div>
                                         </div>`);
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotPenicilina!=1){
         $(".c2").empty();
         $(".c2").append(`<input class="holon" value="${pivotPenicilina}"></input>`);
+
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
 
     carrito.push(penicilinaAhumada);
@@ -69,6 +80,8 @@ function agregarCarritoPeniciA(){
 function agregarCarritoExp(){
     pivotExperimento++;
     pivotTotal++;
+
+    precioTotal=precioTotal+ expNro9.precio;
 
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
@@ -81,9 +94,15 @@ function agregarCarritoExp(){
                                                 <input class="holon" value="${pivotExperimento}"></input>
                                             </div>
                                         </div>`);
+
+                                        $(".carritoPrecio_num").empty();
+                                        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotExperimento!=1){
         $(".c3").empty();
         $(".c3").append(`<input class="holon" value="${pivotExperimento}"></input>`);
+
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
 
     carrito.push(expNro9);
@@ -91,6 +110,7 @@ function agregarCarritoExp(){
 function agregarCarritoSaturno(){
     pivotExpedicion++;
     pivotTotal++;
+    precioTotal=precioTotal+ expedicionSaturno.precio;
 
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
@@ -103,9 +123,13 @@ function agregarCarritoSaturno(){
                                                 <input class="holon" value="${pivotExpedicion}"></input>
                                             </div>
                                         </div>`);
+                                        $(".carritoPrecio_num").empty();
+                                        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotExpedicion!=1){
         $(".c4").empty();
         $(".c4").append(`<input class="holon" value="${pivotExpedicion}"></input>`);
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
 
     carrito.push(expedicionSaturno);
@@ -114,6 +138,7 @@ function agregarCarritoSaturno(){
 function agregarCarritoNegroni(){
     pivotNegroni++;
     pivotTotal++;
+    precioTotal=precioTotal+ negroniDeLaHuerta.precio;
 
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
@@ -126,15 +151,20 @@ function agregarCarritoNegroni(){
                                                 <input class="holon" value="${pivotNegroni}"></input>
                                             </div>
                                         </div>`);
+                                        $(".carritoPrecio_num").empty();
+                                        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotNegroni!=1){
         $(".c5").empty();
         $(".c5").append(`<input class="holon" value="${pivotNegroni}"></input>`);
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
     carrito.push(negroniDeLaHuerta);
 }
 function agregarCarritoTonic(){
     pivotTonico++;
     pivotTotal++;
+    precioTotal=precioTotal+ tonicoHome.precio;
 
     $(".chariotContador").empty();
     $(".chariotContador").append(`${pivotTotal}`);
@@ -147,9 +177,13 @@ function agregarCarritoTonic(){
                                                 <input class="holon" value="${pivotTonico}"></input>
                                             </div>
                                         </div>`);
+                                        $(".carritoPrecio_num").empty();
+                                        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }else if(pivotTonico!=1){
         $(".c6").empty();
         $(".c6").append(`<input class="holon" value="${pivotNegroni}"></input>`);
+        $(".carritoPrecio_num").empty();
+        $(".carritoPrecio_num").append(`<p>${precioTotal}</p>`);
     }
     carrito.push(tonicoHome);
 }
@@ -266,6 +300,8 @@ function logkey(e){
                 $("#caribeG6").animate({bottom:'0%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoCaribeS()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${caribeSolar.precio}.-</p>`)
                 contador=1;
             break;
             case 1:
@@ -298,6 +334,8 @@ function logkey(e){
                 $("#penicilinaG6").animate({bottom:'50%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoPeniciA()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${penicilinaAhumada.precio}.-</p>`)
                 contador=2;
             break;
             case 2:
@@ -331,6 +369,8 @@ function logkey(e){
                 $("#experimentoG6").animate({bottom:'90%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoExp()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${expNro9.precio}.-</p>`)
                 contador=3;
             break;
             case 3:
@@ -362,7 +402,9 @@ function logkey(e){
                 $("#experimentoG6").animate({bottom:'150%'},"slow");
                 $("#expedicionG6").animate({bottom:'125%'},"slow");
 
-                $(".addCart_boton").attr("onclick","agregarCarritoSaturno()");                
+                $(".addCart_boton").attr("onclick","agregarCarritoSaturno()");   
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${expedicionSaturno.precio}.-</p>`)             
                 contador=4;
             break;
             case 4:
@@ -395,6 +437,8 @@ function logkey(e){
                 $("#negroniG6").animate({bottom:'160%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoNegroni()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${negroniDeLaHuerta.precio}.-</p>`)
                 contador=5;
             break;
             case 5:
@@ -427,6 +471,8 @@ function logkey(e){
                 $("#tonicoG6").animate({bottom:'225%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoTonic()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${tonicoHome.precio}.-</p>`)
                 contador=0;
             break;
         }
@@ -462,6 +508,8 @@ function logkey(e){
                 $("#tonicoG6").animate({bottom:'238%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoTonic()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${tonicoHome.precio}.-</p>`)
                 contador=0;
             break;
             case 2:
@@ -494,6 +542,8 @@ function logkey(e){
                 $("#caribeG6").animate({bottom:'10%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoCaribeS()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${caribeSolar.precio}.-</p>`)
                 contador=1;
             break;
             case 3:
@@ -526,6 +576,8 @@ function logkey(e){
                 $("#penicilinaG6").animate({bottom:'35%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoPeniciA()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${penicilinaAhumada.precio}.-</p>`)
                 contador=2;
             break;
             case 4:
@@ -558,6 +610,8 @@ function logkey(e){
                 $("#experimentoG6").animate({bottom:'110%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoExp()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${expNro9.precio}.-</p>`)
                 contador=3;
             break;
             case 5:
@@ -589,7 +643,9 @@ function logkey(e){
                 $("#negroniG6").animate({bottom:'100%'},"slow");
                 $("#expedicionG6").animate({bottom:'110%'},"slow");
 
-                $(".addCart_boton").attr("onclick","agregarCarritoSaturno()");                
+                $(".addCart_boton").attr("onclick","agregarCarritoSaturno()");        
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${expedicionSaturno.precio}.-</p>`)        
                 contador=4;
             break;
             case 0:
@@ -622,6 +678,8 @@ function logkey(e){
                 $("#negroniG6").animate({bottom:'180%'},"slow");
 
                 $(".addCart_boton").attr("onclick","agregarCarritoNegroni()");
+                $("#items--precio").empty();
+                $("#items--precio").append(`<p>$${negroniDeLaHuerta.precio}.-</p>`)
                 contador=5;
         }
     }
