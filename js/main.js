@@ -35,7 +35,7 @@ function agregarCarritoCaribeS(){
                                             <img class="carritoImagen" src="https://drive.google.com/uc?/export=view&id=1n1gsZ_3q8NLwm2wLgqs3S1fFnUrSXPD3"/>
                                             <h3 class="carritoTitulo_compras">Caribe<br>Solar</h3>
                                             <div class="testin c1">
-                                                <input class="holon" value="${pivotCaribe}"></input>
+                                                <p class="holon" value="${pivotCaribe}"></p>
                                             </div>
                                         </div>`);
         $(".carritoPrecio_num").empty();
@@ -257,6 +257,11 @@ var gridTipo = document.createElement("div");
 var gridDescripcion = document.createElement("div");
 var precio = document.createElement("span");
 var cart = document.createElement("span");
+
+const mitadA = document.getElementById("mitadA");
+const cajaA = document.getElementById("verProd");
+const cajaB = document.getElementById("descripcion");
+
 //clase14
 const urlGeteada = "https://jsonplaceholder.typicode.com/posts";
 //clase9
@@ -687,10 +692,13 @@ function logkey(e){
 function checkin(){
     $(".carritoBoton").empty();
     $(".carritoBoton").append(`<p>Aún no implementado</p>`);
-
 }
 btnSwitch.addEventListener('click', () =>{
     testo.classList.toggle('dark');
+    mitadA.classList.toggle('dark');
+    cajaA.classList.toggle('dark');
+    cajaB.classList.toggle('dark');
+    btnSwitch.classList.toggle('dark');
 
     if(testo.classList.contains("dark")){
         localStorage.setItem("dark-mode", "true");
@@ -700,8 +708,16 @@ btnSwitch.addEventListener('click', () =>{
 });
 if(localStorage.getItem("dark-mode") === "true"){
     testo.classList.add("dark");
+    mitadA.classList.add('dark');
+    cajaA.classList.add('dark');
+    cajaB.classList.add('dark');
+    btnSwitch.classList.add('dark');
 } else {
     testo.classList.remove("dark");
+    mitadA.classList.remove('dark');
+    cajaA.classList.remove('dark');
+    cajaB.classList.remove('dark');
+    btnSwitch.classList.remove('dark');
 }
 //12
 $(document).ready(function() {
