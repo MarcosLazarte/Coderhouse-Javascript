@@ -468,7 +468,7 @@ $dark4: #501F57;
 .navAbajo{
     width: 100%;
     position: absolute;
-    top: 2.3vw;
+    top: 2.15vw;
     z-index: 1;
     .posSwitch{
         position: absolute;
@@ -483,11 +483,13 @@ $dark4: #501F57;
             display: flex;
             width: 30px;
             height: 25px;
+            color: #2d325b;
+
             &::after{
                 content: '\f185';
                 font-family: "Font Awesome 5 Free";
                 text-align: center;
-                font-size: 30px;
+                font-size: 1.3vw;
 
                 position: absolute;
                 border-radius: 100px;
