@@ -684,8 +684,11 @@ function logkey(e){
         }
     }
 }
-//Termino Clase9
+function checkin(){
+    $(".carritoBoton").empty();
+    $(".carritoBoton").append(`<p>Aún no implementado</p>`);
 
+}
 btnSwitch.addEventListener('click', () =>{
     testo.classList.toggle('dark');
 
